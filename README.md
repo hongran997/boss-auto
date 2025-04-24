@@ -22,7 +22,7 @@
 
 1. 首先打开 Chrome 浏览器，并使用以下命令启动（Windows）：
    ```bash
-   "C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222
+   "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --user-data-dir="C:\temp\chrome-debug-profile"
    ```
 
 2. 在浏览器中登录 BOSS 直聘，并导航到目标职位搜索页面
@@ -44,8 +44,3 @@
 如果需要调整脚本行为，可以修改以下参数：
 - 滚动速度：修改 `smoothScroll` 函数中的参数
 - 延迟时间：修改 `randomDelay` 函数中的参数 
-
-
-
-TODO： 
-在查找到页面上有“继续沟通” 文案内容的button 的时候，跳过当前的，遍历下一个

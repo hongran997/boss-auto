@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "BOSS直聘自动投递助手",
+  "version": "1.0",
+  "description": "自动投递简历到BOSS直聘职位",
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://*.zhipin.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/icon.svg"
+  },
+  "icons": {
+    "128": "images/icon.svg"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.zhipin.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ]
+} 
