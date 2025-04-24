@@ -1,0 +1,17 @@
+{
+  "name": "boss-auto",
+  "version": "1.0.0",
+  "description": "Auto resume sender for BOSS direct",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "playwright": "^1.42.1",
+    "dotenv": "^16.4.5"
+  }
+}
